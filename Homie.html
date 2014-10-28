@@ -100,13 +100,8 @@ input:checked {
   	font-family: "Arial Black", Gadget, sans-serif;
   	font-weight: bold;
 }
-
-.all .footerContainer {
-	width:100%;
-	margin-bottom: 20px;
-}
-    
-.all .jumbotron .searchbar form #searchtext {
+  
+.all .jumbotron .searchbar form #search_adress {
 	width:250px;
 	text-align: inherit;
 	
@@ -152,22 +147,20 @@ input:checked {
   <div class="searchbar">
             
 	  <h1>Search for your dream location!</h1><br />
-	  
-	  <form action ="HomieMap.html">
-
-        <input type="text" class="search" id="searchtext" name="searchtext" placeholder="Search location, for example 'Odenplan'">
+	  	<p>
+        <input type="text" class="search" id="search_adress" name="search_adress" placeholder="Search location, for example 'Odenplan'">
+         </p>
          <br /><br />
          
-	</form>
-    <input type="checkbox" id="show_hide_layer1" onclick="changeLayer(this.value);" checked="checked" class="styled green">CO2</input>
+    	<input type="checkbox" id="show_hide_layer1" onclick="changeLayer(this.value);" checked="checked" class="styled green">CO2</input>
     
-<input type="checkbox" id="show_hide_layer2" onclick="changeLayer(this.value);" checked="checked">Air pollution</input>
+		<input type="checkbox" id="show_hide_layer2" onclick="changeLayer(this.value);" checked="checked">Air pollution</input>
 
-<input name="Submit" type="submit" class="button" id="submit" value="Search"> 
+		<input name="Submit" type="submit" class="button" id="submit" value="Search"> 
 
-<div id="googft-mapCanvas">
-</div>
-<br/>
+		<div id="googft-mapCanvas">
+		</div>
+		<br/>
 
   </div>
 </div><br />
