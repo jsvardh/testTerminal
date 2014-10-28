@@ -10,6 +10,15 @@
 
 <style type="text/css">
 
+a {
+	color: #FFF; 
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #969696; 
+	text-decoration: none;
+}
 
 .all {
 	background-color: #CCC;
@@ -25,13 +34,9 @@
 	border-top-color: #FFF;	
 }
 
-.all .Heading {
-	font-family: 
-	height: 140px;
-}
 
 .Heading h1 {
-	
+	font-family: "Arial Black", Gadget, sans-serif;
  	font-size: 50px;  
 	text-align: center;
 	color: #FFF;
@@ -50,6 +55,7 @@
 	padding:10px;
 	margin-bottom: 20px;
 }
+
 
 .navigation {
 	text-align:center;
@@ -82,12 +88,16 @@
 	padding-top: 100px;
 }
 
-
+input:checked {
+    height: 50px;
+    width: 50px;
+    font-family: helvetica;
+}
 
 .all .jumbotron .searchbar h1 {
 	color: #FFF;
   	font-size: 30px;  
-  	font-family: 'Shift', sans-serif;
+  	font-family: "Arial Black", Gadget, sans-serif;
   	font-weight: bold;
 }
 
@@ -98,9 +108,17 @@
     
 .all .jumbotron .searchbar form #searchtext {
 	width:250px;
-	text-align:center;
+	text-align: inherit;
 	
 }
+
+
+
+.all .jumbotron .searchbar #show_hide_layer1 {
+	color: #FFF;
+}
+
+
 </style>
 </head>
 
@@ -112,11 +130,8 @@
 <div class="Heading">
 
 
-	<h1>HOMIE</h1>
+	<h1>Homie</h1>
     
-    
-
-
     <div class="menu">
 		<div class="navigation">
     
@@ -144,7 +159,8 @@
          <br /><br />
          
 	</form>
-    <input type="checkbox" id="show_hide_layer1" onclick="changeLayer(this.value);" checked="checked">CO2</input>
+    <input type="checkbox" id="show_hide_layer1" onclick="changeLayer(this.value);" checked="checked" class="styled green">CO2</input>
+    
 <input type="checkbox" id="show_hide_layer2" onclick="changeLayer(this.value);" checked="checked">Air pollution</input>
 
 <input name="Submit" type="submit" class="button" id="submit" value="Search"> 
