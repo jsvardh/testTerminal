@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     
+
+<title>Index</title>
+
+<style type="text/css">
+
+
+.all {
+	background-color: #CCC;
+	text-align: center;
+	border-right-width: 50px;
+	border-left-width: 50px;
+	border-right-style: double;
+	border-left-style: double;
+	border-right-color: #FFF;
+	border-left-color: #FFF;
+	border-top-width: 20px;
+	border-top-style: double;
+	border-top-color: #FFF;	
+}
+
+.all .Heading {
+	font-family: 
+	height: 140px;
+}
+
+.Heading h1 {
+	
+ 	font-size: 50px;  
+	text-align: center;
+	color: #FFF;
+	padding-top: 20px;
+}
+
+.menu a {
+	border-top: 2px solid #636366;
+	border-bottom: 2px solid #636366;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-size: 11px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align:center;
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+.navigation {
+	text-align:center;
+	background-color: #FFF;
+}
+
+
+.navigation ul{
+	background-color: #FFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	display: block;
+	list-style-position: outside;
+	overflow: visible;
+	visibility: inherit;
+}
+.navigation li {
+    display: inline;
+	text-align:center;
+	padding-right: 10px;
+	
+}
+
+.all .jumbotron {
+	background-image: url(http://fc05.deviantart.net/fs70/f/2010/152/d/f/Magic_Forest__Silva_Arcanas_by_anonymous738.jpg);
+	height: 600px;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	padding-top: 100px;
+}
+
+
+
+.all .jumbotron .searchbar h1 {
+	color: #FFF;
+  	font-size: 30px;  
+  	font-family: 'Shift', sans-serif;
+  	font-weight: bold;
+}
+
+.all .footerContainer {
+	width:100%;
+	margin-bottom: 20px;
+}
+    
+.all .jumbotron .searchbar form #searchtext {
+	width:250px;
+	text-align:center;
+	
+}
+</style>
+</head>
+
+
+<body>
+  
+<div class = "all">
+
+<div class="Heading">
+
+
+	<h1>HOMIE</h1>
+    
+    
+
+
+    <div class="menu">
+		<div class="navigation">
+    
+        <ul>
+        
+			<li><a href="abouthomie.html">About</a></li>
+            <li><a href="HomieAccomodationCost.html">Finance</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul><br /><br />
+		</div> 
+	</div>
+    
+        
+</div>
+
+
+<div class="jumbotron">
+  <div class="searchbar">
+            
+	  <h1>Search for your dream location!</h1><br />
+	  
+	  <form action ="HomieMap.html">
+
+        <input type="text" class="search" id="searchtext" name="searchtext" placeholder="Search location, for example 'Odenplan'">
+         <br /><br />
+         
+	</form>
+    <input type="checkbox" id="show_hide_layer1" onclick="changeLayer(this.value);" checked="checked">CO2</input>
+<input type="checkbox" id="show_hide_layer2" onclick="changeLayer(this.value);" checked="checked">Air pollution</input>
+
+<input name="Submit" type="submit" class="button" id="submit" value="Search"> 
+
+<div id="googft-mapCanvas">
+</div>
+<br/>
+
+  </div>
+</div><br />
+
+  
+  
+</div>
+
+<script type = 'text/javascript'>
+
+var main = function() {
+  /* Push the body and the nav over by 285px over */
+  $('.icon-menu').click(function() {
+    $('.menu').animate({
+      left: "0px"
+    }, 200);
+
+    $('body').animate({
+      left: "285px"
+    }, 200);
+  });
+
+  /* Then push them back */
+  $('.icon-close').click(function() {
+    $('.menu').animate({
+      left: "-285px"
+    }, 200);
+
+    $('body').animate({
+      left: "0px"
+    }, 200);
+  });
+};
+
+
+$(document).ready(main);
+
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="appmy2.js"></script>
+
+</body>
+</html>
